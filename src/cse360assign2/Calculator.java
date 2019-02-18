@@ -13,35 +13,40 @@ public class Calculator {
 	 * Gets the totals from the functions below.
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	/**
 	 * Adds integers to get the total value 
 	 * @param value holds the integer to be given be returned from the calculator.
 	 */
 	public void add (int value) {
-		
+		total = total + value;
 	}
 	/**
 	 * Subtracts integers to get the total value 
 	 * @param value holds the integer to be given be returned from the calculator.
 	 */
 	public void subtract (int value) {
-		
+		total = total - value;
 	}
 	/**
 	 * Multiplies integers together to get the total value 
 	 * @param value holds the integer to be given to the calculator.
 	 */
 	public void multiply (int value) {
-		
+		total = total * value;
 	}
 	/**
 	 * Divides integers together to get the total value 
 	 * @param value holds the integer to be given be returned from the calculator.
 	 */
 	public void divide (int value) {
-		
+		if (value == 0) {
+			total = 0;
+		}
+		else {
+			total = total / value;
+		}		
 	}
 	
 	/**
