@@ -22,7 +22,8 @@ public class Calculator {
 	 * 
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
+
 	}
 	
 	/**
@@ -30,14 +31,14 @@ public class Calculator {
 	 * @param value holds the integer to be given be returned from the calculator.
 	 */
 	public void add (int value) {
-		
+		int sum = total + value;
 	}
 	/**
 	 * Subtracts integers to get the total value.
 	 * @param value holds the integer to be given to the calculator
 	 */
 	public void subtract (int value) {
-		
+		int minus = total - value;
 	}
 	
 	/**
@@ -45,6 +46,8 @@ public class Calculator {
 	 * @param value holds the integer to be given to the calculator.
 	 */
 	public void multiply (int value) {
+		int mult = total * value;
+		
 		
 	}
 	
@@ -53,10 +56,15 @@ public class Calculator {
 	 * @param value holds the integer to be given to the calculator
 	 */
 	public void divide (int value) {
+		int divide2 = total / value;
+		if (value == 0) {
+			total == 0;
+		}
 		
 	}
 	
 	/**
+	 * This method will return a history of all actions of the functions. 
 	 * Gets all the values that were returned from the functions above. 
 	 * 
 	 */
